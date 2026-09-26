@@ -1,0 +1,14 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build & preview artifacts
+preview.html
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Python
+__pycache__/
+*.pyc

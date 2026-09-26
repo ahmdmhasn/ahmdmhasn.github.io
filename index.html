@@ -1,10 +1,42 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="robots" content="noindex">
-    <meta http-equiv="refresh" content="0; url=https://sites.google.com/view/ahmdmhasn/home/">
-  </head>
-  <body>
-    <a href="https://sites.google.com/view/ahmdmhasn/home/">Redirect to Google Site</a>
-  </body>
+---
+layout: null
+---
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f5f5f7" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="description"
+    content="Ahmed M. Hassan is an Staff iOS engineer and mobile app architect based in Dublin, Ireland." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ahmed M. Hassan — Staff iOS Engineer" />
+  <meta property="og:description" content="Thoughtful Staff iOS engineering, open source, and ideas in progress." />
+  <meta property="og:url" content="https://ahmdmhasn.github.io/" />
+  <title>Ahmed M. Hassan — Staff iOS Engineer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    {% include header.html %}
+
+    <main id="main" class="screens">
+      {% include home.html %}
+      {% include about.html %}
+      {% include work.html %}
+      {% include blogs.html %}
+      {% include connect.html %}
+    </main>
+
+    {% include navigation.html %}
+  </div>
+</body>
+
 </html>
