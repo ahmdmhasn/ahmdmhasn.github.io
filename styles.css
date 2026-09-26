@@ -84,7 +84,7 @@ a:focus-visible, button:focus-visible {
   gap: 9px;
   font-size: 13px;
   font-weight: 650;
-  letter-spacing: -0.025em;
+  letter-spacing: normal;
 }
 
 .brand-mark {
@@ -96,7 +96,7 @@ a:focus-visible, button:focus-visible {
   background: #1d1d1f;
   color: #fff;
   font-size: 11px;
-  letter-spacing: -0.06em;
+  letter-spacing: normal;
 }
 
 .header-location {
@@ -155,7 +155,7 @@ a:focus-visible, button:focus-visible {
 
 h1, h2, h3, h4 {
   margin: 0;
-  letter-spacing: -0.065em;
+  letter-spacing: normal;
 }
 
 h1, h2 {
@@ -303,7 +303,7 @@ h3 {
   font-weight: 650;
   color: #1d1d1f;
   margin: 0 0 6px 0;
-  letter-spacing: -0.03em;
+  letter-spacing: normal;
 }
 
 .widget-main p {
@@ -358,7 +358,7 @@ h3 {
   font-weight: 650;
   color: #1d1d1f;
   margin: 0 0 2px 0;
-  letter-spacing: -0.02em;
+  letter-spacing: normal;
 }
 
 .widget-sub p {
