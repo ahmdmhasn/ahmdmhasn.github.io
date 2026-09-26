@@ -119,4 +119,44 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  // Theme Toggling Logic
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+  function getActiveTheme() {
+    return document.documentElement.getAttribute('data-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  }
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem('theme', theme);
+    } catch (e) {}
+    if (themeColorMeta) {
+      themeColorMeta.setAttribute('content', theme === 'dark' ? '#161618' : '#f5f5f7');
+    }
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = getActiveTheme();
+      const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      setTheme(nextTheme);
+    });
+  }
+
+  // Listen for system theme changes if no explicit user override
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    try {
+      if (!localStorage.getItem('theme')) {
+        const systemTheme = e.matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', systemTheme);
+        if (themeColorMeta) {
+          themeColorMeta.setAttribute('content', systemTheme === 'dark' ? '#161618' : '#f5f5f7');
+        }
+      }
+    } catch (err) {}
+  });
 });

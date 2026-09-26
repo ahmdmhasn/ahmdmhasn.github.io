@@ -17,6 +17,21 @@ layout: null
   <meta property="og:description" content="Thoughtful Staff iOS engineering, open source, and ideas in progress." />
   <meta property="og:url" content="https://ahmdmhasn.github.io/" />
   <title>Ahmed M. Hassan — Staff iOS Engineer</title>
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var isDark = stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        if (isDark) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          var meta = document.querySelector('meta[name="theme-color"]');
+          if (meta) meta.setAttribute('content', '#161618');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      } catch (e) {}
+    })();
+  </script>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
