@@ -46,6 +46,8 @@ Dates, job titles, locations, and work details below come from Ahmed's six-page 
 
 ## VictoryLink — Maadi, Cairo, Egypt
 
+- Ahmed confirmed the company spelling **VictoryLink** and prefers the public role progression **Software Engineer → Senior Software Engineer**. The LinkedIn export gives the more specific iOS titles and exact employment dates below; the role ended in December 2021, immediately before the January 2022 Swvl role.
+
 - **Senior iOS Engineer:** October 2020–December 2021.
   - Designed and implemented technical solutions for project requirements.
   - Coordinated with architects, business analysts, and backend engineers on functionality.

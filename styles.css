@@ -437,16 +437,65 @@ h3 {
 .experience-timeline {
   list-style: none;
   padding: 0;
-  margin: 26px 0 0;
-  border-top: 1px solid var(--border-color);
+  margin: 32px 0 0;
+  position: relative;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  bottom: 7px;
+  left: 136px;
+  width: 1px;
+  background: var(--border-card-hover);
 }
 
 .experience-timeline li {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(100px, 0.34fr) 1fr;
-  gap: 18px;
-  padding: 22px 0;
-  border-bottom: 1px solid var(--border-color);
+  grid-template-columns: 116px 40px minmax(0, 1fr);
+  align-items: start;
+  padding: 0 0 30px;
+}
+
+.experience-timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.experience-timeline li:last-child::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 136px;
+  width: 1px;
+  background: var(--bg-surface);
+}
+
+.experience-timeline li::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 130px;
+  width: 13px;
+  height: 13px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  background: var(--bg-surface);
+  z-index: 1;
+}
+
+.experience-timeline li:first-child::before {
+  background: var(--accent-color);
+}
+
+.experience-timeline li > div {
+  grid-column: 3;
+}
+
+.experience-timeline .timeline-date {
+  padding-top: 3px;
 }
 
 .timeline-date, .card-kicker {
@@ -459,6 +508,14 @@ h3 {
 
 .experience-timeline h3 { font-size: 19px; }
 .experience-timeline p { margin: 6px 0 0; color: var(--text-secondary); font-size: 13px; line-height: 1.5; }
+
+@media (max-width: 520px) {
+  .experience-timeline::before { left: 6px; }
+  .experience-timeline li { display: block; padding: 0 0 28px 30px; }
+  .experience-timeline li::before { left: 0; }
+  .experience-timeline li:last-child::after { left: 6px; }
+  .experience-timeline .timeline-date { display: block; padding: 0 0 7px; }
+}
 
 .home-title {
   display: flex;
