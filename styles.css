@@ -633,6 +633,22 @@ h3 {
   color: var(--brand-mark-fg);
 }
 
+.home-links .home-link-secondary {
+  padding-inline: 18px;
+  border: 1px solid var(--border-card);
+  border-radius: 99px;
+}
+
+.home-links .home-link-secondary:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.home-link-socials {
+  display: inline-flex;
+  gap: 4px;
+}
+
 .screen-home a:focus-visible {
   outline-color: var(--accent-color);
 }
