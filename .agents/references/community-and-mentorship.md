@@ -7,12 +7,12 @@
 
 ## Swift Mentorship Program
 
-- The 2026-09-27 site task identifies a dedicated Swift/iOS mentorship program for architecture guidance. No public program URL, schedule, or independent program description was supplied. Avoid implying a formal enrollment period.
+- Ahmed participated as a mentor in Apple's Swift Mentorship Program from June–September 2022. The program connected experienced Swift developers with mentees working toward contributions to open-source projects. Do not imply a current enrollment period.
 
-## ITI
+## Motoon
 
-- Ahmed completed the Information Technology Institute's Web & Mobile Applications Development track, October 2017–July 2018; his internship entry ends June 2018. See [education](education-and-recognition.md) and [experience](experience.md).
-- The 2026-09-27 site task reports ITI community involvement and developer mentorship. No specific initiative, date, or public link was supplied.
+- Ahmed participated as an Education Mentor in Motoon's iOS mentorship program in 2022 and 2024. The program supported junior and mid-level iOS developers through current practices and scalable project development.
+- Public session link: <https://bit.ly/ios-mentorship>.
 
 ## Speaking and podcasts
 
