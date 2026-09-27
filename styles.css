@@ -714,6 +714,18 @@ h3 {
   overflow: hidden;
 }
 
+.project-art-icon {
+  background: var(--bg-surface);
+}
+
+.project-icon {
+  width: min(128px, 34vw);
+  height: min(128px, 34vw);
+  object-fit: cover;
+  border-radius: 24%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+}
+
 .stack {
   position: absolute;
   width: 75px;
@@ -832,12 +844,24 @@ h3 {
   line-height: 1.4;
   color: var(--text-secondary);
   margin: 0 0 9px;
+  min-height: calc(1.4em * 3);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 
 .project-copy a {
   font-size: 12px;
   font-weight: 600;
   color: var(--accent-color);
+}
+
+.project-link-unavailable {
+  display: inline-block;
+  color: var(--text-tertiary);
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .project-tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0 0 12px; }
