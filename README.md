@@ -1,6 +1,6 @@
 # Ahmed M. Hassan — personal website
 
-A dependency-free, single-page personal site for GitHub Pages. Open `index.html` locally to preview it. The Blogs navigation link points to a placeholder section in the same page; replace that section with posts when they are ready.
+A dependency-free, single-page personal site for GitHub Pages. Run `python3 build.py` to generate `preview.html` for local preview. The five views are Home, Projects, Community, Writing, and Connect.
 
 ## Publish
 

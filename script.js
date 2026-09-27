@@ -6,9 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const appNavLinks = document.querySelectorAll('.app-nav a[data-screen]');
 
   // Screen Switching Logic
-  function showScreen(screenId) {
+  function showScreen(screenId, moveFocus = false) {
     const targetScreen = document.getElementById(screenId);
-    if (!targetScreen) return;
+    if (!targetScreen || !targetScreen.classList.contains('screen')) return;
+
+    const focusHeading = () => {
+      if (moveFocus) targetScreen.querySelector('[tabindex="-1"]')?.focus({ preventScroll: true });
+    };
 
     const updateDOM = () => {
       screens.forEach((screen) => {
@@ -29,14 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      // Scroll main area to top
-      window.scrollTo({ top: 0, behavior: 'instant' });
+      targetScreen.querySelectorAll('.scrollable-pane').forEach((pane) => {
+        pane.scrollTop = 0;
+      });
     };
 
-    if (document.startViewTransition) {
-      document.startViewTransition(() => updateDOM());
+    if (!targetScreen.hidden) {
+      updateDOM();
+      focusHeading();
+    } else if (document.startViewTransition && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.startViewTransition(updateDOM).finished.then(focusHeading, focusHeading);
     } else {
       updateDOM();
+      focusHeading();
     }
   }
 
@@ -48,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (screenId) {
         e.preventDefault();
         window.location.hash = screenId;
-        showScreen(screenId);
+        showScreen(screenId, true);
       }
     }
   });
@@ -56,8 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Handle hash changes in URL
   window.addEventListener('hashchange', () => {
     const hash = window.location.hash.replace('#', '');
-    if (hash && document.getElementById(hash)) {
-      showScreen(hash);
+    if (hash && document.getElementById(hash)?.classList.contains('screen')) {
+      showScreen(hash, true);
     }
   });
 

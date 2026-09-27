@@ -1,0 +1,8 @@
+# Writing and articles
+
+- Medium profile: <https://medium.com/@ahmdmhasn>. Ahmed confirmed on 2026-09-27 that this is his profile and supplied direct links for **four published articles**.
+- **Swift Ownership: Copyable, Borrowing, and Consuming**: <https://medium.com/@ahmdmhasn/swift-ownership-copyable-borrowing-and-consuming-6d851b821bcb>. Title and topic are inferred from the URL Ahmed supplied; the page could not be fetched, so the exact displayed title, publication date, and read time remain unverified.
+- **Simplify AsyncStream Usage with the `Streamed` Property Wrapper**, Ahmed M. Hassan, Medium, 8 December 2024, 3 min read: <https://medium.com/@ahmdmhasn/simplify-asyncstream-usage-with-the-streamed-property-wrapper-2e765cb84e13>. The article moves from callbacks to `AsyncStream` and wraps stream and continuation handling in `@Streamed`.
+- **Mastering Imperative Navigation in SwiftUI with a Coordinator Pattern**, Ahmed M. Hassan, Medium, 12 October 2024, 6 min read: <https://medium.com/@ahmdmhasn/mastering-imperative-navigation-in-swiftui-with-a-coordinator-pattern-8a7e034b242d>. The article explains programmatic navigation, coordinators, and SwiftUI view separation. These details were checked against the article on 2026-09-27.
+- **Copiable in Swift — Clean Approach**, Ahmed M. Hassan, Medium, 8 January 2022, 4 min read: <https://medium.com/@ahmdmhasn/copiable-in-swift-clean-approach-5f983eeaaa66>. The article discusses value and reference types, copying, and a `copy()` approach to updating values.
+- Swift 6 concurrency and mobile architecture are also supported areas of experience in [experience](experience.md). Do not label an article specifically about Swift 6 unless its content supports that description.

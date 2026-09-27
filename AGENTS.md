@@ -19,20 +19,21 @@ The application operates as a single-page app (SPA) using HTML native attributes
 ### Screen Layout (`index.html` & `_includes/`)
 The application source is split into modular partials inside `_includes/` and stitched together using GitHub Pages native Jekyll Liquid includes (`{% include ... %}`):
 - `_includes/header.html` — Site header and brand title
-- `_includes/home.html` — Beyond The Prompt hero and personal introduction (`#home`)
-- `_includes/about.html` — Background, experience, and key focus areas (`#about`)
-- `_includes/work.html` — Open-source project carousel (`#work`)
-- `_includes/blogs.html` — Blog & writing placeholder section (`#blogs`)
+- `_includes/home.html` — Beyond The Prompt hero, profile, and experience timeline (`#home`)
+- `_includes/work.html` — App and open-source project carousel (`#work`)
+- `_includes/community.html` — Mentorship, speaking, and podcasts (`#community`)
+- `_includes/blogs.html` — Medium articles and writing (`#blogs`)
 - `_includes/connect.html` — Social links & contact options (`#connect`)
 - `_includes/navigation.html` — Bottom app navigation bar
 
-All screens reside inside `<main id="main" class="screens">` as `<section>` elements in the generated static page.
+The five screens (Home, Projects, Community, Writing, Connect) reside inside `<main id="main" class="screens">` as `<section>` elements in the generated static page.
 Inactive screens are hidden using the standard HTML5 `hidden` attribute.
+Each screen's `.scrollable-pane` holds content within the fixed viewport and resets to the top when that screen opens.
 
 ### Navigation Controller (`script.js`)
 - **`showScreen(screenId)`**: Toggles the `hidden` attribute on `<section class="screen">` elements and sets `aria-current="page"` on the active navigation link.
 - **View Transitions**: Screen changes use `document.startViewTransition()` for hardware-accelerated animations.
-- **URL Hash Synchronization**: Listens to `click` events on `[data-screen]` elements and `hashchange` window events so direct deep links (`/#work`, `/#about`) and browser Back/Forward work properly.
+- **URL Hash Synchronization**: Listens to `click` events on `[data-screen]` elements and `hashchange` window events so direct deep links (`/#work`, `/#community`) and browser Back/Forward work properly.
 - **Project Stage Carousel (`updateProject`)**: Manages project card pagination inside the `#work` section.
 
 ### App Shell & Styling (`styles.css`)

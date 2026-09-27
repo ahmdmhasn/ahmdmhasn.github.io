@@ -18,6 +18,8 @@
 - Previous website home: <https://sites.google.com/view/ahmdmhasn/home/>. This was the archived page's source URL; its present availability is unverified.
 - GitHub: <https://github.com/ahmdmhasn>. Linked from the previous website.
 - LinkedIn: <https://www.linkedin.com/in/ahmdmhasn/>. The previous website also linked `http://linkedin.com/in/ahmdmhasn` and `http://www.linkedin.com/in/ahmdmhasn`.
+- Medium: <https://medium.com/@ahmdmhasn>. Ahmed confirmed this profile and four published articles on 2026-09-27; see [writing](writing-and-articles.md).
+- X: <https://x.com/ahmdmhasn>. The handle appears on Ahmed's GitHub profile and in the 2026-09-27 site task; the destination page was not independently retrievable.
 - “Sync with Hassan” booking link on the previous website: <https://calendar.app.google/WVE8mUicYqazMVBf9>. Present availability is unverified.
-- “Mentorship Session” link on the previous website: <https://adplist.org/mentors/ahmed-m-hassan>. Present availability is unverified.
+- ADPList mentor and booking profile: <https://adplist.org/mentors/ahmed-m-hassan>. Ahmed confirmed this URL on 2026-09-27; session availability may change.
 - The previous website invited questions about services and general contact. It displayed GitHub, LinkedIn, and email links near both the introduction and footer.
