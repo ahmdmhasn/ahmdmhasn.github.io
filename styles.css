@@ -853,9 +853,16 @@ h3 {
 .mentorship-card a, .article-card a { color: var(--accent-color); font-size: 13px; font-weight: 650; }
 .speaking-section { margin-top: 34px; }
 .speaking-list { padding: 0; margin: 0; list-style: none; }
-.speaking-list li { display: flex; justify-content: space-between; gap: 18px; padding: 18px 0; border-top: 1px solid var(--border-color); }
+.speaking-list li { display: grid; grid-template-columns: 112px minmax(0, 1fr) auto; align-items: center; gap: 18px; padding: 18px 0; border-top: 1px solid var(--border-color); }
+.speaking-thumbnail { width: 112px; aspect-ratio: 16 / 9; border-radius: 13px; overflow: hidden; display: grid; place-items: center; flex: 0 0 auto; }
+.speaking-thumbnail img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.thumbnail-wwdc { background: #1d1d1f; }
+.thumbnail-swiftcairo { background: linear-gradient(135deg, #f47b20, #ed3b67); color: #fff; font-size: 14px; font-weight: 800; line-height: 1.05; letter-spacing: .08em; text-align: center; }
+.thumbnail-swiftcairo img { object-fit: contain; }
+.speaking-copy { min-width: 0; }
 .speaking-list h4 { margin: 7px 0 5px; font-size: 17px; }
 .speaking-list p { margin: 0; }
+.speaking-link { color: var(--accent-color); font-size: 12px; font-weight: 650; }
 .speaking-status { color: var(--text-tertiary); font-size: 11px; text-align: right; }
 .article-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; color: var(--text-tertiary); font-size: 11px; }
 .article-card h3 { font-size: clamp(20px, 3vw, 25px); line-height: 1.2; margin: 15px 0 10px; }
@@ -993,6 +1000,11 @@ h3 {
 
 @media (max-width: 430px) {
   .header-location { display: none; }
+
+  .speaking-list li { grid-template-columns: 82px minmax(0, 1fr); gap: 12px; }
+  .speaking-thumbnail { width: 82px; border-radius: 10px; }
+  .speaking-status { display: none; }
+  .thumbnail-swiftcairo { font-size: 10px; }
 }
 
 /* Desktop & Tablet Layout (min-width: 760px) */
