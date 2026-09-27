@@ -12,7 +12,9 @@
 ## Motoon
 
 - Ahmed participated as an Education Mentor in Motoon's iOS mentorship program in 2022 and 2024. The program supported junior and mid-level iOS developers through current practices and scalable project development.
-- Public session link: <https://bit.ly/ios-mentorship>.
+- Public session links:
+  - Program v1: <https://www.youtube.com/playlist?list=PLd54r6JMBHnoOckPp__VoWULuvWooTCS5>
+  - Program v2: <https://www.youtube.com/playlist?list=PLd54r6JMBHnq293Ol5yRH6ZXQw2et_VvX>
 
 ## Speaking and podcasts
 
