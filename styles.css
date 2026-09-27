@@ -313,8 +313,8 @@ a:focus-visible, button:focus-visible {
 .screen-inner {
   height: 100%;
   min-height: 0;
-  width: min(100% - 40px, 1180px);
-  margin: auto;
+  width: 100%;
+  padding-inline: max(20px, calc((100% - 1180px) / 2));
 }
 
 /* Global Typography & Buttons */
@@ -1044,7 +1044,7 @@ h3 {
   }
 
   .screen-inner {
-    width: min(100% - 100px, 1180px);
+    padding-inline: max(50px, calc((100% - 1180px) / 2));
   }
 
   .content-layout, .work-layout {
@@ -1114,7 +1114,7 @@ h3 {
   }
 
   .screen-inner {
-    width: calc(100% - 32px);
+    padding-inline: 16px;
   }
 
   .content-layout {
