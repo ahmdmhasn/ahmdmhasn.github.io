@@ -546,7 +546,7 @@ h3 {
   width: 1.08em;
   height: 1.08em;
   flex: none;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .home-identity {
