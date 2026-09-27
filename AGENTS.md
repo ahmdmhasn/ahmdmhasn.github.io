@@ -1,6 +1,6 @@
 # Personal Website — Agent & Architecture Guidelines (`AGENTS.md`)
 
-This repository contains the single-page personal portfolio for **Ahmed M. Hassan** (Staff iOS Engineer), hosted statically on **GitHub Pages** (`ahmdmhasn.github.io`).
+This repository contains the single-page personal portfolio for **Ahmed M. Hassan**, hosted statically on **GitHub Pages** (`ahmdmhasn.github.io`). Use the personal knowledge skill below for his preferred title and current biographical facts.
 
 ---
 
@@ -19,7 +19,7 @@ The application operates as a single-page app (SPA) using HTML native attributes
 ### Screen Layout (`index.html` & `_includes/`)
 The application source is split into modular partials inside `_includes/` and stitched together using GitHub Pages native Jekyll Liquid includes (`{% include ... %}`):
 - `_includes/header.html` — Site header and brand title
-- `_includes/home.html` — Hero intro and quick highlight cards (`#home`)
+- `_includes/home.html` — Beyond The Prompt hero and personal introduction (`#home`)
 - `_includes/about.html` — Background, experience, and key focus areas (`#about`)
 - `_includes/work.html` — Open-source project carousel (`#work`)
 - `_includes/blogs.html` — Blog & writing placeholder section (`#blogs`)
@@ -52,5 +52,6 @@ When modifying or expanding this codebase, strictly follow these rules:
    - Maintain focus management (`tabindex="-1"` on headers when navigated to).
    - Ensure proper contrast and tap targets for mobile browsers.
 4. **CSS Tokens & Layout**:
-   - Use CSS variables defined in `:root` inside [`styles.css`](file:///Users/ahmdmhasn/Workspace/personal-website/styles.css).
+   - Use CSS variables defined in `:root` inside [`styles.css`](styles.css).
    - Test layout responsiveness across mobile (`min-width: 320px`) and desktop screens.
+5. **Site Content**: For any request to write or revise website content, read [`.agents/personal-knowledge/SKILL.md`](.agents/personal-knowledge/SKILL.md) and the standalone [knowledge base](.agents/references/README.md). Add relevant, supported details when they help the requested copy; newer user corrections take precedence.

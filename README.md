@@ -8,4 +8,4 @@ Push these files to the root of the `ahmdmhasn/ahmdmhasn.github.io` repository. 
 
 ## Content
 
-The site uses public information verified from [Ahmed's GitHub profile](https://github.com/ahmdmhasn) and linked repositories. The existing website and LinkedIn profile could not be read by the available fetchers during creation, so their unverified details were not added. Update `index.html` when more profile information is available.
+For biographical, career, and project updates, use the [personal knowledge skill](.agents/personal-knowledge/SKILL.md) and its standalone [reference notes](.agents/references/README.md). The HTML content lives in `_includes/` and is assembled by `index.html`.
