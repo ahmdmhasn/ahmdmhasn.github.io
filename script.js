@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('[data-screen]');
   const screens = document.querySelectorAll('.screen');
   const appNavLinks = document.querySelectorAll('.app-nav a[data-screen]');
+  let pendingClickHash = null;
 
   // Screen Switching Logic
   function showScreen(screenId, moveFocus = false) {
@@ -56,8 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const screenId = targetLink.getAttribute('data-screen');
       if (screenId) {
         e.preventDefault();
+        pendingClickHash = window.location.hash === `#${screenId}` ? null : screenId;
         window.location.hash = screenId;
-        showScreen(screenId, true);
+        showScreen(screenId, e.detail === 0);
       }
     }
   });
@@ -65,7 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Handle hash changes in URL
   window.addEventListener('hashchange', () => {
     const hash = window.location.hash.replace('#', '');
-    if (hash && document.getElementById(hash)?.classList.contains('screen')) {
+    if (hash === pendingClickHash) {
+      pendingClickHash = null;
+      return;
+    }
+    pendingClickHash = null;
+    const targetScreen = document.getElementById(hash);
+    if (targetScreen?.classList.contains('screen')) {
       showScreen(hash, true);
     }
   });
